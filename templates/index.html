@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+</head>
+<body>
+    <form method="GET" action="/create">
+        <div class="form-group">
+            <label class="col-md-3 control-label" for="stringinput">Enter Long url</label>
+            <div class="col-md-5">
+                <input id="stringinput" name="long_url" type="text" placeholder="Enter long url" class="form-control input-md" required="">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="sendbtn"></label>
+            <div class="col-md-4">
+                <button id="sendbtn" name="long_url_sent" class="btn btn-primary">Create short url</button>
+            </div>
+            <span>{{ shortUrl }}</span>
+        </div>
+    </form> 
+
+    <form method="GET" action="/extract">
+        <div class="form-group">
+            <label class="col-md-3 control-label" for="stringinput">Enter Short url</label>
+            <div class="col-md-5">
+                <input id="stringinput" name="short_url" type="text" placeholder="Enter short url" class="form-control input-md" required="">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="sendbtn"></label>
+            <div class="col-md-4">
+                <button id="sendbtn" name="long_url_sent" class="btn btn-primary">Get long url</button>
+            </div>
+            <span>{{ longUrl }}</span>
+        </div>
+    </form>
+
+
+    
+</body>
+</html>
