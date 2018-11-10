@@ -16,10 +16,10 @@ def create_unique_key():
 
 
 mydb = mysql.connector.connect(
-    host="urldatabase.cev9mb8hqf4r.us-east-1.rds.amazonaws.com",
-    user="superuser",
-    passwd="123456789",
-    database="urls"
+    host="database_host_here",
+    user="database_user_here",
+    passwd="password_here",
+    database="database_name_here"
 )
 
 mycursor = mydb.cursor()
