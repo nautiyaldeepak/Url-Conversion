@@ -19,7 +19,7 @@ $ python3 app.py
 
 ## Usage
 
-After the execution of the command [python3 app.py], it will generate an endpoint on a local port. Access the endpoint from the browser of your choice. 
+After the execution of the command `python3 app.py`, it will generate an endpoint on a local port. Access the endpoint from the browser of your choice. 
 
 ## Contributing
 Do you want to make this better? Open an issue and/or a PR on Github. Thanks!
